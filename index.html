@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- slick -->
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <!-- js footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ReStyle</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <a class="logo" href="index.html">
+          <img class="logo1" src="ReStyle.png" alt="" />ReStyle
+        </a>
+        <ul class="links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="gallery.html">Favoris</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <input class="iii" type="text" placeholder="Recherche" required />
+        </ul>
+        <div class="buttons">
+          <a href="S'enregistrer.html" class="action-button pro"
+            >S'enregistrer</a
+          >
+          <a href="Se-connecter.html" class="action-button">Se connecter</a>
+        </div>
+        <div class="burger-menu-button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <ul class="links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="media">Catalogue</a></li>
+          <li><a href="Contact.html">Favoris</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <div class="divider"></div>
+          <li>
+            <input type="text" placeholder="Recherche" required />
+          </li>
+          <div class="buttons-burger-menu">
+            <a href="S'enregistrer.html" class="action-button pro"
+              >S'enregistrer</a
+            >
+            <a href="Se-connecter.html" class="action-button">Se connecter</a>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+
+    <div class="banner">
+      <div class="title">
+        <svg
+          width="320"
+          height="320"
+          viewBox="0 0 55 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.664 13C0.6 13 0.546667 12.9787 0.504 12.936C0.461333 12.8933 0.44 12.84 0.44 12.776V2.456C0.44 2.296 0.493333 2.16267 0.6 2.056C0.717333 1.93867 0.856 1.88 1.016 1.88H3.8C4.408 1.88 4.95733 2.024 5.448 2.312C5.93867 2.6 6.328 2.98933 6.616 3.48C6.904 3.97067 7.048 4.51467 7.048 5.112C7.048 5.63467 6.936 6.11467 6.712 6.552C6.488 6.98933 6.17867 7.35733 5.784 7.656C5.4 7.95467 4.95733 8.15733 4.456 8.264L7.112 12.552C7.144 12.5947 7.16 12.648 7.16 12.712C7.16 12.904 7.05867 13 6.856 13H6.04C5.93333 13 5.85333 12.952 5.8 12.856L3 8.328H1.752V12.776C1.752 12.84 1.73067 12.8933 1.688 12.936C1.64533 12.9787 1.592 13 1.528 13H0.664ZM1.752 7.096H3.704C4.28 7.096 4.75467 6.90933 5.128 6.536C5.512 6.152 5.704 5.68267 5.704 5.128C5.704 4.54133 5.512 4.06133 5.128 3.688C4.75467 3.304 4.28 3.112 3.704 3.112H1.752V7.096ZM12.3401 13C11.7001 13 11.1135 12.8453 10.5801 12.536C10.0575 12.216 9.64146 11.7947 9.33213 11.272C9.02279 10.7387 8.86813 10.152 8.86813 9.512V7.224C8.86813 6.57333 9.02279 5.98667 9.33213 5.464C9.64146 4.94133 10.0575 4.52533 10.5801 4.216C11.1135 3.896 11.7001 3.736 12.3401 3.736C12.9801 3.736 13.5615 3.896 14.0841 4.216C14.6068 4.52533 15.0228 4.94133 15.3321 5.464C15.6521 5.98667 15.8121 6.57333 15.8121 7.224V8.312C15.8121 8.472 15.7535 8.61067 15.6361 8.728C15.5295 8.83467 15.3961 8.888 15.2361 8.888H10.1161V9.592C10.1161 9.99733 10.2121 10.3707 10.4041 10.712C10.6068 11.0533 10.8735 11.3253 11.2041 11.528C11.5455 11.72 11.9241 11.816 12.3401 11.816H14.6601C14.7241 11.816 14.7775 11.8373 14.8201 11.88C14.8628 11.9227 14.8841 11.976 14.8841 12.04V12.776C14.8841 12.84 14.8628 12.8933 14.8201 12.936C14.7775 12.9787 14.7241 13 14.6601 13H12.3401ZM10.1161 7.736H14.5641V7.144C14.5641 6.728 14.4628 6.35467 14.2601 6.024C14.0681 5.68267 13.8015 5.416 13.4601 5.224C13.1295 5.02133 12.7561 4.92 12.3401 4.92C11.9241 4.92 11.5455 5.02133 11.2041 5.224C10.8735 5.416 10.6068 5.68267 10.4041 6.024C10.2121 6.35467 10.1161 6.728 10.1161 7.144V7.736ZM20.6704 13.208C20.1477 13.208 19.6197 13.1333 19.0864 12.984C18.5637 12.8347 18.105 12.6267 17.7104 12.36C17.6677 12.3387 17.641 12.3013 17.6304 12.248C17.6197 12.184 17.6197 12.1307 17.6304 12.088L17.9984 11.368C18.0517 11.272 18.1264 11.224 18.2224 11.224C18.2437 11.224 18.265 11.224 18.2864 11.224C18.3077 11.224 18.329 11.2347 18.3504 11.256C18.6917 11.4587 19.0544 11.6347 19.4384 11.784C19.8224 11.9227 20.2384 11.992 20.6864 11.992C21.3477 11.992 21.9024 11.8213 22.3504 11.48C22.7984 11.1387 23.0224 10.6693 23.0224 10.072C23.0224 9.66667 22.9157 9.34133 22.7024 9.096C22.4997 8.84 22.2277 8.632 21.8864 8.472C21.5557 8.312 21.1984 8.15733 20.8144 8.008C20.4624 7.86933 20.0997 7.72 19.7264 7.56C19.3637 7.4 19.0277 7.20267 18.7184 6.968C18.4197 6.72267 18.1744 6.424 17.9824 6.072C17.7904 5.70933 17.6944 5.26133 17.6944 4.728C17.6944 4.03467 17.8544 3.464 18.1744 3.016C18.4944 2.55733 18.9157 2.22133 19.4384 2.008C19.9717 1.784 20.5424 1.672 21.1504 1.672C21.673 1.672 22.1744 1.74667 22.6544 1.896C23.145 2.03467 23.5717 2.22667 23.9344 2.472C23.977 2.49333 24.0037 2.536 24.0144 2.6C24.0357 2.65333 24.0304 2.70667 23.9984 2.76L23.6464 3.416C23.593 3.50133 23.5237 3.544 23.4384 3.544C23.417 3.544 23.3957 3.544 23.3744 3.544C23.353 3.53333 23.3317 3.52267 23.3104 3.512C22.9797 3.30933 22.633 3.15467 22.2704 3.048C21.9184 2.93067 21.5504 2.872 21.1664 2.872C20.5157 2.872 19.993 3.032 19.5984 3.352C19.2144 3.66133 19.0224 4.09867 19.0224 4.664C19.0224 5.06933 19.1237 5.4 19.3264 5.656C19.529 5.90133 19.7957 6.104 20.1264 6.264C20.4677 6.424 20.8357 6.584 21.2304 6.744C21.5504 6.872 21.8864 7.01067 22.2384 7.16C22.601 7.29867 22.9424 7.48533 23.2624 7.72C23.5824 7.944 23.8437 8.23733 24.0464 8.6C24.249 8.96267 24.3504 9.416 24.3504 9.96C24.3504 10.632 24.1904 11.2133 23.8704 11.704C23.561 12.184 23.129 12.5573 22.5744 12.824C22.0197 13.08 21.385 13.208 20.6704 13.208ZM29.5403 13C29.0069 13 28.5536 12.888 28.1803 12.664C27.8176 12.44 27.5403 12.1467 27.3483 11.784C27.1669 11.4107 27.0763 11 27.0763 10.552V5.112H26.0203C25.9563 5.112 25.9029 5.09067 25.8603 5.048C25.8176 5.00533 25.7963 4.952 25.7963 4.888V4.168C25.7963 4.104 25.8176 4.05067 25.8603 4.008C25.9029 3.96533 25.9563 3.944 26.0203 3.944H27.0763V2.264C27.0763 2.2 27.0976 2.14667 27.1403 2.104C27.1829 2.06133 27.2363 2.04 27.3003 2.04H28.1003C28.1643 2.04 28.2176 2.06133 28.2603 2.104C28.3029 2.14667 28.3243 2.2 28.3243 2.264V3.944H31.1403C31.2043 3.944 31.2576 3.96533 31.3003 4.008C31.3429 4.05067 31.3643 4.104 31.3643 4.168V4.904C31.3643 4.968 31.3429 5.02133 31.3003 5.064C31.2576 5.10667 31.2043 5.128 31.1403 5.128H28.3243V10.408C28.3243 10.824 28.4469 11.16 28.6923 11.416C28.9483 11.6613 29.2789 11.7893 29.6843 11.8L31.1403 11.816C31.2043 11.816 31.2576 11.8373 31.3003 11.88C31.3429 11.9227 31.3643 11.976 31.3643 12.04V12.776C31.3643 12.84 31.3429 12.8933 31.3003 12.936C31.2576 12.9787 31.2043 13 31.1403 13H29.5403ZM35.4436 16.088C35.3476 16.088 35.273 16.056 35.2196 15.992C35.1663 15.928 35.1556 15.848 35.1876 15.752L36.1156 13.096L32.9316 4.296C32.921 4.27467 32.9156 4.23733 32.9156 4.184C32.9156 4.12 32.937 4.06667 32.9796 4.024C33.033 3.97067 33.097 3.944 33.1716 3.944H33.9076C34.057 3.944 34.1583 4.01333 34.2116 4.152L36.7236 11.32L39.2196 4.152C39.273 4.01333 39.3743 3.944 39.5236 3.944H40.2276C40.313 3.944 40.377 3.97067 40.4196 4.024C40.4623 4.06667 40.4836 4.12 40.4836 4.184C40.4836 4.23733 40.4783 4.27467 40.4676 4.296L36.3716 15.88C36.3183 16.0187 36.217 16.088 36.0676 16.088H35.4436ZM43.5749 13C43.4149 13 43.2762 12.9467 43.1589 12.84C43.0522 12.7227 42.9989 12.584 42.9989 12.424V2.04H41.5109C41.4469 2.04 41.3935 2.01867 41.3509 1.976C41.3082 1.93333 41.2869 1.88 41.2869 1.816V1.08C41.2869 1.016 41.3082 0.962666 41.3509 0.919999C41.3935 0.877332 41.4469 0.855999 41.5109 0.855999H43.6709C43.8309 0.855999 43.9642 0.914666 44.0709 1.032C44.1882 1.13867 44.2469 1.272 44.2469 1.432V11.816H45.9429C46.0069 11.816 46.0602 11.8373 46.1029 11.88C46.1455 11.9227 46.1669 11.976 46.1669 12.04V12.776C46.1669 12.84 46.1455 12.8933 46.1029 12.936C46.0602 12.9787 46.0069 13 45.9429 13H43.5749ZM51.1526 13C50.5126 13 49.926 12.8453 49.3926 12.536C48.87 12.216 48.454 11.7947 48.1446 11.272C47.8353 10.7387 47.6806 10.152 47.6806 9.512V7.224C47.6806 6.57333 47.8353 5.98667 48.1446 5.464C48.454 4.94133 48.87 4.52533 49.3926 4.216C49.926 3.896 50.5126 3.736 51.1526 3.736C51.7926 3.736 52.374 3.896 52.8966 4.216C53.4193 4.52533 53.8353 4.94133 54.1446 5.464C54.4646 5.98667 54.6246 6.57333 54.6246 7.224V8.312C54.6246 8.472 54.566 8.61067 54.4486 8.728C54.342 8.83467 54.2086 8.888 54.0486 8.888H48.9286V9.592C48.9286 9.99733 49.0246 10.3707 49.2166 10.712C49.4193 11.0533 49.686 11.3253 50.0166 11.528C50.358 11.72 50.7366 11.816 51.1526 11.816H53.4726C53.5366 11.816 53.59 11.8373 53.6326 11.88C53.6753 11.9227 53.6966 11.976 53.6966 12.04V12.776C53.6966 12.84 53.6753 12.8933 53.6326 12.936C53.59 12.9787 53.5366 13 53.4726 13H51.1526ZM48.9286 7.736H53.3766V7.144C53.3766 6.728 53.2753 6.35467 53.0726 6.024C52.8806 5.68267 52.614 5.416 52.2726 5.224C51.942 5.02133 51.5686 4.92 51.1526 4.92C50.7366 4.92 50.358 5.02133 50.0166 5.224C49.686 5.416 49.4193 5.68267 49.2166 6.024C49.0246 6.35467 48.9286 6.728 48.9286 7.144V7.736Z"
+            fill="white"
+          />
+        </svg>
+        <a href="../Site-market/profil.html" class="button button--piyo">
+          <div class="button__wrapper">
+            <span class="button__text">Profil</span>
+          </div>
+          <div class="characterBox">
+            <div class="character wakeup">
+              <div class="character__face"></div>
+            </div>
+            <div class="character wakeup">
+              <div class="character__face"></div>
+            </div>
+            <div class="character">
+              <div class="character__face"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+
+    <!-- Boutton Poussin -->
+
+    <!-- Fin -->
+
+    <!-- Fin de la hero section -->
+
+    <!-- Caroussel atricles phares -->
+    <body>
+      <div class="bannerr">
+        <div class="sliderr" style="--quantity: 10">
+          <div class="itemm" style="--position: 1">
+            <img src="images/vetement-1.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 2">
+            <img src="images/vetement-3.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 3">
+            <img src="images/vetement-2.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 4">
+            <img src="images/vetement-4.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 5">
+            <img src="images/vetement-5.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 6">
+            <img src="images/vetement-6.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 7">
+            <img src="images/vetement-7.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 8">
+            <img src="images/vetement-8.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 9">
+            <img src="images/vetement-9.jpg" alt="" />
+          </div>
+          <div class="itemm" style="--position: 10">
+            <img src="images/vetement-10.jpg" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <h1 data-content="Articles">Articles</h1>
+          <div class="author">
+            <h2>ReStyle</h2>
+            <p><b>Articles phares</b></p>
+            <p></p>
+          </div>
+          <div class="model"></div>
+        </div>
+      </div>
+
+    <!-- Fin -->
+
+    <div class="bg-gray-200 w-screen p-8 sm:p-16 dark:bg-gray-900">
+      <div class="p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100">
+        <h3>Chaussures</h3>
+      </div>
+      <div class="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://contents.mediadecathlon.com/p1871974/k$c9c8d8990817a7224d48e78ce7004798/sq/Chaussures+imperm+ables+de+randonn+e+montagne+Merrell+Capra+Mid+GTX+Homme.jpg" />
+        <div class="bg-gray-100 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease dark:bg-gray-700">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">super chaussure</h2>
+                <p class="dark:text-gray-100">Pour homme</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">160€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://contents.mediadecathlon.com/p1569919/k$feebb15b83d8e33d7c3eac906da26227/sq/chaussures-impermeables-de-randonnee-montagne-salomon-x-ultra3-gtx-mid-homme.jpg?format=auto&f=1296x1296" />
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Air Jordan</h2>
+                <p class="dark:text-gray-100">Pour homme</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">200€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://www.tennis-point.fr/dw/image/v2/BBDP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw396beb69/images/026/160/00079000_0_1.jpg?q=80&sw=2000" />
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Jumpman</h2>
+                <p class="dark:text-gray-100">Pour homme</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">165€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="bg-gray-200 w-screen p-8 sm:p-16 dark:bg-gray-900">
+      <div class="p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100">
+        <h3>Vetements</h3>
+      </div>
+      <div class="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://cdn11.bigcommerce.com/s-xku293zif5/images/stencil/original/products/5647/11166/Vetements-x-Alpha-Industries-Hooded-Racing-Jacket-1__13094.1676891164.jpg" />
+        <div class="bg-gray-100 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease dark:bg-gray-700">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">jordan spizike low</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">160€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease " src="https://cdna.lystit.com/photos/farfetch/868171b6/vetements-blue-Ripped-Wide-leg-Jeans.jpeg" />
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Air Jordan 6 Retro</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">200€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease " src="https://photo.grande-marque.fr/ralph-lauren-pull-torsade-en-laine-et-cachemire,x,112000,112198.jpg"/>
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Jumpman MVP</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">165€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="bg-gray-200 w-screen p-8 sm:p-16 dark:bg-gray-900">
+      <div class="p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100">
+        <h3>hover through the cards to see margic 22</h3>
+      </div>
+      <div class="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://www.citywatches.fr/wp-content/uploads/2020/03/BN2037-11E.jpg"/>
+        <div class="bg-gray-100 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease dark:bg-gray-700">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">jordan spizike low</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">160€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://media.cdnws.com/_i/70772/63623/2819/24/montre-benyar-pour-homme-montre-chronographe-a-quartz-avec-un-grand-cadran-et-un-cadre-en-acier-inoxydable.png" />
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Air Jordan 6 Retro</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">200€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- card -->
+      <div class="relative group bg-gray-200 h-[400px] shadow-lg rounded-2xl overflow-hidden">
+        <img class="w-full h-full group-hover:h-64 object-cover rounded-2xl transition-all delay-150 duration-300 ease" src="https://www.lheurepassion.com/_i/70772/62548/1057/48/benyar-montre-homme-chronographe-pour-homme-30m-etanche-et-anti-rayures-cadeau-elegant.png"/>
+        <div class="bg-gray-100 dark:bg-gray-700 w-full h-40 absolute left-0 bottom-0 -mb-44 group-hover:mb-0 rounded-b-2xl transition-all delay-150 duration-300 ease">
+          <div class="p-6">
+            <div class="capitalize flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-red-600 text-lg font-bold">Jumpman MVP</h2>
+                <p class="dark:text-gray-100">men's shoes</p>
+              </div>
+              <div>
+              <p class="text-3xl font-bold dark:text-gray-100">165€</p>
+              </div>
+            </div>
+            <div class="block mt-4">
+              <div class="absolute bottom-2 left-5">
+                <button class="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Catalogue</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Favoris</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      </ul>
+      <div class="containerr">
+        <p>Abonnez-vous à notre Newsletter</p>
+        <div class="email">
+          <input type="email" placeholder="Email" />
+          <i class="icon fa fa-envelope"></i>
+          <button type="submit">Envoyer</button>
+        </div>
+      </div>
+      <p class="mentions">
+        &copy;2024 ReStyle | Camille - Augustin |
+        <a href="">Mentions legales</a>
+        <a href="error.html">| 404</a>
+      </p>
+    </footer>
+
+    <!-- Footer JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- JS Burger Menu -->
+    <script>
+      const burgerMenuButton = document.querySelector(".burger-menu-button");
+      const burgerMenuButtonIcon = document.querySelector(
+        ".burger-menu-button i"
+      );
+      const burgerMenu = document.querySelector(".burger-menu");
+
+      burgerMenuButton.onclick = function () {
+        burgerMenu.classList.toggle("open");
+        const isOpen = burgerMenu.classList.contains("open");
+        burgerMenuButtonIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+    <!-- Script Slick -->
+
+    
+    
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- icon se connecter -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--fin-->
+    <link rel="stylesheet" href="S'enregistrer.css" />
+    <title>ReStyle</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <a class="logo" href="index.html">
+          <img class="logo1" src="ReStyle.png" alt="" />ReStyle
+        </a>
+        <ul class="links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Catalogue</a></li>
+          <li><a href="media">Favoris</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <input class="iii" type="text" placeholder="Recherche" required />
+        </ul>
+        <div class="buttons">
+          <a href="S'enregistrer.html" class="action-button pro"
+            >S'enregistrer</a
+          >
+          <a href="Se-connecter.html" class="action-button">Se connecter</a>
+        </div>
+        <div class="burger-menu-button">
+          x
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <ul class="links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="media">Catalogue</a></li>
+          <li><a href="gallery.html">Favoris</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <input class="iii" type="text" placeholder="Recherche" required />
+          <div class="divider"></div>
+          <div class="buttons-burger-menu">
+            <a href="S'enregistrer.html" class="action-button pro"
+              >S'enregistrer</a
+            >
+            <a href="Se-connecter.html" class="action-button">Se connecter</a>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Boutton se connecter -->
+
+    <div class="tout-wrapper">
+      <div class="wrapper">
+        <form action="">
+          <h1>Login</h1>
+
+          <div class="input-box">
+            <input type="text" placeholder="Email" required />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Identifiant" required />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-box">
+            <input type="password" placeholder="Mot de passe" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <div class="remenber-forgot">
+            <label><input type="checkbox" />Rester connecter</label>
+          </div>
+
+          <button type="submit" class="btn">S'enregistrer</button>
+
+          <div class="register-link">
+            <p>Déja un compte ? <a href="#">Se connecter</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Catalogue</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Favoris</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      </ul>
+      <div class="containerr">
+        <p>Abonnez-vous à notre Newsletter</p>
+        <div class="email">
+          <input type="email" placeholder="Email" />
+          <i class="icon fa fa-envelope"></i>
+          <button type="submit">Envoyer</button>
+        </div>
+      </div>
+      <p class="mentions">
+        &copy;2024 ReStyle | Camille - Augustin |
+        <a href="">Mentions legales</a>
+      </p>
+    </footer>
+
+    <!-- JS Burger Menu -->
+    <script>
+      const burgerMenuButton = document.querySelector(".burger-menu-button");
+      const burgerMenuButtonIcon = document.querySelector(
+        ".burger-menu-button i"
+      );
+      const burgerMenu = document.querySelector(".burger-menu");
+
+      burgerMenuButton.onclick = function () {
+        burgerMenu.classList.toggle("open");
+        const isOpen = burgerMenu.classList.contains("open");
+        burgerMenuButtonIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
